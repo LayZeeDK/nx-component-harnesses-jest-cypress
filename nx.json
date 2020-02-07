@@ -17,6 +17,9 @@
     "component-harnesses-jest-cypress-e2e": {
       "tags": [],
       "implicitDependencies": ["component-harnesses-jest-cypress"]
+    },
+    "ui": {
+      "tags": ["type:ui"]
     }
   }
 }
