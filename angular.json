@@ -21,7 +21,10 @@
               "apps/component-harnesses-jest-cypress/src/favicon.ico",
               "apps/component-harnesses-jest-cypress/src/assets"
             ],
-            "styles": ["apps/component-harnesses-jest-cypress/src/styles.css"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "apps/component-harnesses-jest-cypress/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -140,7 +143,10 @@
               "libs/ui/tsconfig.lib.json",
               "libs/ui/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/ui/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui/**"
+            ]
           }
         },
         "test": {
