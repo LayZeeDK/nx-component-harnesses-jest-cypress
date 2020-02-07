@@ -1,0 +1,17 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "nxComponentHarnessesJestCypress",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "nx-component-harnesses-jest-cypress",
+      "kebab-case"
+    ]
+  }
+}

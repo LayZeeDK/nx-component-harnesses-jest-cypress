@@ -1,0 +1,22 @@
+{
+  "npmScope": "nx-component-harnesses-jest-cypress",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "component-harnesses-jest-cypress": {
+      "tags": []
+    },
+    "component-harnesses-jest-cypress-e2e": {
+      "tags": [],
+      "implicitDependencies": ["component-harnesses-jest-cypress"]
+    }
+  }
+}
