@@ -16,5 +16,6 @@ export enum Weekday {
   styleUrls: ['./weekday-picker.component.css'],
 })
 export class WeekdayPickerComponent {
-  weekdays = Object.values(Weekday);
+  selection: Weekday;
+  weekdays = Object.values(Weekday).filter(x => typeof x === 'string');
 }
