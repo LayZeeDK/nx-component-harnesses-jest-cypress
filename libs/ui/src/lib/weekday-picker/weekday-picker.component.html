@@ -1,7 +1,7 @@
-<mat-form-field>
+<mat-form-field cy-data="weekday-picker">
   <mat-label>Weekday</mat-label>
-  <mat-select [(ngModel)]="selection">
-    <mat-option *ngFor="let weekday of weekdays" [value]="weekday">
+  <mat-select [(ngModel)]="selection" >
+    <mat-option *ngFor="let weekday of weekdays" [value]="weekday" [attr.cy-data]="weekday+'-option'">
       {{weekday}}
     </mat-option>
   </mat-select>
