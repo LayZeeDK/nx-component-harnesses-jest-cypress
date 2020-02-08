@@ -4,13 +4,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "nxComponentHarnessesJestCypress",
+      "app",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "nx-component-harnesses-jest-cypress",
+      "app",
       "kebab-case"
     ]
   }

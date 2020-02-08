@@ -1,1 +1,8 @@
-<p>weekday-picker works!</p>
+<mat-form-field>
+  <mat-label>Weekday</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let weekday of weekdays" [value]="weekday">
+      {{weekday}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
