@@ -93,7 +93,8 @@
           "options": {
             "jestConfig": "apps/component-harnesses-jest-cypress/jest.config.js",
             "tsConfig": "apps/component-harnesses-jest-cypress/tsconfig.spec.json",
-            "setupFile": "apps/component-harnesses-jest-cypress/src/test-setup.ts"
+            "setupFile": "apps/component-harnesses-jest-cypress/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       }
@@ -143,10 +144,7 @@
               "libs/ui/tsconfig.lib.json",
               "libs/ui/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/ui/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/ui/**"]
           }
         },
         "test": {
@@ -154,7 +152,8 @@
           "options": {
             "jestConfig": "libs/ui/jest.config.js",
             "tsConfig": "libs/ui/tsconfig.spec.json",
-            "setupFile": "libs/ui/src/test-setup.ts"
+            "setupFile": "libs/ui/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
